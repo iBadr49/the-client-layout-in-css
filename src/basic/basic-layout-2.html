@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body{
+        display: grid;
+        margin: 0 auto;
+        gap: 10px;
+        max-width: 20em;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.6fr 0.6fr 4fr 0.6fr;
+        grid-template-areas: " head "
+        "bar"
+        "content"
+        "voeten"; 
+      }
+      
+      header {
+        grid-area: head;
+      }
+      nav{ 
+        grid-area: bar;
+      }
+      main{
+        grid-area: content;
+      }
+      footer{
+        grid-area: voeten;
+      }
+      
     </style>
   </head>
   <body id="basic-layout-2">

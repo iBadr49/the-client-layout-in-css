@@ -7,10 +7,33 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      body{
+        display: grid;
+        margin: 0 auto;
+        gap: 10px;
+        max-width: 20em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 0.7fr 0.7fr;
+        grid-template-areas: "content content"
+        "voeten voeten"
+        "head bar";
+      }
+      header {
+        grid-area: head;
+      }
+      nav{ 
+        grid-area: bar;
+      }
+      main{
+        grid-area: content;
+      }
+      footer{
+        grid-area: voeten;
+      }
     </style>
   </head>
   <body id="basic-layout-3">
-    <header><h1>Basic Layout 3</h1></header>
+    <header><h2>Basic Layout 3</h2></header>
     <nav><a href="../index.html">Terug naar het overzicht</a></nav>
     <main></main>
     <footer></footer>
