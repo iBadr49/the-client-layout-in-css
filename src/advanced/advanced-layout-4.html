@@ -6,7 +6,34 @@
     <title>Advanced Layout 4</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body{
+        display: grid;
+        max-width: 20em;
+        margin: 0 auto;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "bar head"
+        "content voeten";
+      }
+      header {
+        grid-area: head;
+        transform: skewY(-10deg);
+      }
+      nav{ 
+        grid-area: bar;
+        transform: skewY(-10deg);
+      }
+      main{
+        grid-area: content;
+        transform: skewY(-10deg);
+      }
+      footer{
+        grid-area: voeten;
+        transform: skewY(-10deg);
+      }
+      
     </style>
   </head>
   <body id="advanced-layout-4">

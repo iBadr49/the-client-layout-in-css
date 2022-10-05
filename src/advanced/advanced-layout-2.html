@@ -6,11 +6,35 @@
     <title>Advanced Layout 2</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      
       body{
-
+        display: grid;
+        max-width: 20em;
+        margin: 0 auto;
+        gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "."
+        "bar"
+        "head"
+        "content"
+        "voeten";
       }
-      
+      header {
+        grid-area: bar;
+        transform: rotate(25deg);
+      }
+      nav{ 
+        grid-area: bar;
+        transform: rotate(-25deg);
+      }
+      main{
+        grid-area: content;
+      }
+      footer{
+        grid-area: voeten;
+      }
+
     </style>
   </head>
   <body id="advanced-layout-2">
